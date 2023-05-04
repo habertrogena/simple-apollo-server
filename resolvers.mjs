@@ -1,6 +1,6 @@
 export const resolvers = {
     Query: {
-        checkApiStatus:()=>{
+        checkApiStatus:(parent,args,context,info)=>{
             return {status:'the api is working correctly'}
         }
     },

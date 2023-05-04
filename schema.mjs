@@ -8,15 +8,18 @@ type Query {
 }
 
 type Mutation {
-    TestMutations( input:String):Test
+    createUser( input:UserInput):User
 }
 
 type ApiStatus {
     status: String
 }
 
-type Test {
-    status: String
+input  UserInput {
+    firstName : String
+    lastName: String
+    email :String
+    password: String
 }
 
 `
