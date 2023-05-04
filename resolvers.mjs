@@ -6,9 +6,12 @@ export const resolvers = {
     },
 
     Mutation :{
-        TestMutations : async ()=>{
+        createUser : async (parent,args,context,info)=>{
             return {
-                status: 'mutations are working'
+                firstName: args.input.firstName,
+                lastName: args.input.lastName,
+                email: args.input.email,
+                
             }
         }
     }

@@ -22,4 +22,10 @@ input  UserInput {
     password: String
 }
 
+type User {
+    firstName : String
+    lastName: String
+    email: String
+}
+
 `
